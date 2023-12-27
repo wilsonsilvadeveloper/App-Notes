@@ -48,7 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <h2 id="download">Download</h2>
 
-<a href="./notes.apk" download="notes.apk">Clique aqui para baixar o arquivo APK</a>
+<a href="notes.apk" download>Clique aqui para baixar o arquivo APK</a>
 
 
 
