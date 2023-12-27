@@ -9,10 +9,23 @@ export default class Notes extends React.Component {
     }
     
     render(){
-        return(
-            <View style={styles.anotacoes}>
-                <Text style={styles.anotacoesText}>{this.props.anotacoes}</Text>
-            </View>
-        );
+        if(this.props.anotacoes != null && this.props.anotacoes.length > 0 && this.props.anotacoes != undefined){
+            return(
+                <View style={{width:'100%', alignItems:'center'}}>
+                    {this.props.anotacoes.map((note, index) => (
+                        <View style={styles.anotacoes} key={index}>
+                            <Text style={styles.anotacoesText}>{note.notes}</Text>
+                        </View>
+                    ))}
+                </View>
+            );   
+        } else {
+            return(
+                <View>
+                    <Text style={{color:'white', marginTop:10, fontSize:16}}>Nenhuma anotação encontrada :(</Text>
+                </View>
+            );
+        }
+        
     }
 }

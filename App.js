@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
-
+import {SafeAreaView ,ScrollView, StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native';
+import styles from './styles/style';
 import Header from './components/Header';
 import Body from './components/Body';
 
@@ -9,21 +9,22 @@ export default class App extends React.Component {
 
   constructor(props) {
     super(props);
+    this.body = new Body();
   }
 
   render(){
     return(
-      <ScrollView style={style.container}>
-        <StatusBar style='light' hidden/>
-        <Header></Header>
-        <Body></Body>
-      </ScrollView>
+      <SafeAreaView style={stylesLocal.container}>
+          <StatusBar style='light' hidden/>
+          <Header></Header>
+          <Body></Body>
+      </SafeAreaView>
     )};
 }
 
-const style = StyleSheet.create({
+const stylesLocal = StyleSheet.create({
   container: {
-    height: '100vh',
-    backgroundColor: 'red',
+    flex: 1,
+    backgroundColor:'#D00B0B'
   }
 });

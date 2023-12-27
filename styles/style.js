@@ -1,52 +1,79 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Constants from "expo-constants";
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
     header:{
         display:'flex',
-        justifyContent:'center',
+        justifyContent:'center', 
         alignItems:'center',
         width: '100%',
-        padding:10,
+        height: 50,
+        backgroundColor: '#880B0B'
     },
 
     fontStyleHeader:{
         fontSize:20,
         fontStyle:'italic',
-        color:'black'
+        color:'white'
     },
 
-    body:{
-        width:'100%',
-        height:100,
-        backgroundColor:'white',
-        flexGrow: 1,
-        flexShrink: 1,
-        flexBasis: 0,
-    },
+    body: {
+        flex: 1, // Adicionado para que o Body ocupe toda a altura da tela
+        alignItems:'center',
+        position:'relative',
+      },
 
     anotacoes:{
-        width:'100%',
+        width:'90%',
         height:70,
-        marginTop: 10,
-        backgroundColor:'rgba(0,0,0,0.1)',
-        borderBottomColor: 'black',
+        marginTop: 4,
+        marginBottom: 10,
+        padding: 8,
+        borderColor: 'white',
         borderStyle:'solid',
-        borderBottomWidth: 1,
+        borderWidth: 1,
     },
 
     anotacoesText: {
-        fontSize: 18,
-        fontWeight: '400'
+        fontSize: 16,
+        color: '#E2E8F5'
     },
 
-    containerBtn:{
-        width:'100%',
-        backgroundColor:'blue',
-    }
+    containerBtn: {
+        width: 50,
+        height: 50, // Defina a altura desejada para containerBtn
+        backgroundColor: 'white',
+        justifyContent: 'center', // Centraliza o texto verticalmente
+        alignItems: 'center', // Centraliza o texto horizontalmente
+        position:'absolute', 
+        bottom:20,
+        right: 20,
+        borderRadius: 25
+      },
     
+    containerBtnTxt: {
+        color: 'black',
+        fontSize: 20
+    },
+
+    containerTextInput:{
+        width: '100%', 
+        display: 'flex',
+        alignItems: 'center',
+    },
+
+    TextInput:{
+        width: '90%',
+        height: 50,
+        borderColor: 'white',
+        borderStyle: 'solid',
+        borderWidth: 1,
+        textAlignVertical: 'top',
+        marginTop: 20,
+        padding: 10,
+        color: 'white',
+    }
 
 });
 
