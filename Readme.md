@@ -48,7 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <h2 id="download">Download</h2>
 
-<a href="assets/confirme.png" download>Clique aqui para baixar o arquivo APK</a>
+<a href="notex.apk" download="notex.apk">Clique aqui para baixar o arquivo APK</a>
 
 
 
