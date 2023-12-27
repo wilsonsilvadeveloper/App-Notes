@@ -48,7 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <h2 id="download">Download</h2>
 
-<a href="notes.apk" download="notex.apk">Clique aqui para baixar o arquivo APK</a>
+<a href="https://github.com/wilsonsilvadeveloper/App-Notes/blob/main/notes.apk" download="notes.apk">Clique aqui para baixar o arquivo APK</a>
 
 
 
