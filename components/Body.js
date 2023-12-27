@@ -72,7 +72,7 @@ export default class Body extends React.Component {
                 <View style={styles.body}>
                     <Notes anotacoes={this.state.anotacao}></Notes>
                     <View style={styles.containerBtn}>
-                        <TouchableOpacity onPress={()=>this.novaAnotacao()} ><Text style={styles.containerBtnTxt}>+</Text></TouchableOpacity>
+                        <TouchableOpacity onPress={()=>this.novaAnotacao()} ><Image style={{width:30, height:30}} source={require('../assets/adicionar.png')}></Image></TouchableOpacity>
                     </View>
                 </View>
             );
@@ -84,6 +84,9 @@ export default class Body extends React.Component {
                     </View>
                     <View style={styles.containerBtn}>
                         <TouchableOpacity onPress={()=>this.salvarAnotacao()}><Image style={{width:25, height:25}} source={require('../assets/confirme.png')}></Image></TouchableOpacity>
+                    </View>
+                    <View style={styles.containerBtnCnl}>
+                        <TouchableOpacity onPress={()=>this.setState({estado: 'leitura'})}><Image style={{width:25, height:25}} source={require('../assets/cancelar.png')}></Image></TouchableOpacity>
                     </View>
                 </View>
             );

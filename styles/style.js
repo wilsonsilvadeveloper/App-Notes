@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
 
     anotacoes:{
         width:'90%',
-        height:70,
+        height:'auto',
         marginTop: 4,
         marginBottom: 10,
+        maxHeight: 70,
         padding: 8,
         borderColor: 'white',
         borderStyle:'solid',
@@ -50,11 +51,18 @@ const styles = StyleSheet.create({
         bottom:20,
         right: 20,
         borderRadius: 25
-      },
-    
-    containerBtnTxt: {
-        color: 'black',
-        fontSize: 20
+    },
+
+    containerBtnCnl:{
+        width: 50,
+        height: 50, // Defina a altura desejada para containerBtn
+        backgroundColor: 'white',
+        justifyContent: 'center', // Centraliza o texto verticalmente
+        alignItems: 'center', // Centraliza o texto horizontalmente
+        position:'absolute', 
+        bottom:20,
+        left: 20,
+        borderRadius: 25
     },
 
     containerTextInput:{

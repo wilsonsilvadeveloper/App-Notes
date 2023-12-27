@@ -13,9 +13,9 @@ export default class Notes extends React.Component {
             return(
                 <View style={{width:'100%', alignItems:'center'}}>
                     {this.props.anotacoes.map((note, index) => (
-                        <View style={styles.anotacoes} key={index}>
+                        <ScrollView style={styles.anotacoes} key={index}>
                             <Text style={styles.anotacoesText}>{note.notes}</Text>
-                        </View>
+                        </ScrollView>
                     ))}
                 </View>
             );   
